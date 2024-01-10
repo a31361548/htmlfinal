@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Share+Tech+Mono&display=swap"
+  <link <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Share+Tech+Mono&display=swap"
     rel="stylesheet">
   <!-- boostrap -->
   <link rel="stylesheet" href="./css/bootstrap.css">
@@ -23,7 +23,41 @@
 
 <body>
   <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <a class="navbar-brand" href="#"><img src="./image/logo-01.png"></a>
+        </div>
+        <div class="col-5"></div>
+        <div class="col-5">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
 
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <script src="./js/jquery-3.7.1.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js'></script>
+  <script src="./js/all.js"></script>
 </body>
 
 </html>
