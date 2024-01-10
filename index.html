@@ -24,34 +24,66 @@
 <body>
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-          <a class="navbar-brand" href="#"><img src="./image/logo-01.png"></a>
-        </div>
-        <div class="col-5"></div>
-        <div class="col-5">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./image/logo-01.png">
+      </a>
+      <div id="baricon" class="d-flex justify-content-between">
+        <i class="bi-search"></i>
+        <i class="bi-cart"></i>
+        <i class="bi-heart"></i>
       </div>
-
-
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul id="barText" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link active" href="#">Game Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
           </li>
         </ul>
       </div>
+      <button class="btn d-sm-none d-lg-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
     </div>
   </nav>
+  <!-- offcanvas 內文 -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="col-4 ofbox">
+        <li>Home</li>
+        <li>My Wishlist</li>
+        <li>My Account</li>
+        <li>Track Order</li>
+        <li>Refunds</li>
+        <li>Help & FAQs</li>
+      </div>
+      <div class="col-4 ofbox"></div>
+      <div class="col-4 ofbox"></div>
+    </div>
+  </div>
+
+
 
 
   <script src="./js/jquery-3.7.1.js"></script>

@@ -1,8 +1,38 @@
 body {
   font-family: "Noto Sans ,serif";
+  list-style: none;
 }
 
 .container {
   margin: 5px;
   padding: 0;
+}
+
+#barText li a {
+  font-size: 1rem;
+}
+#barText li a:hover {
+  color: orange;
+}
+
+#baricon {
+  width: 15%;
+  position: fixed;
+  right: 7%;
+  top: 2%;
+}
+#baricon i {
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 0;
+}
+#baricon i:hover {
+  text-shadow: 0 0 9px orange, 0 0 10px orange;
+}
+
+.ofbox {
+  margin: 1.5rem;
+}
+.ofbox li {
+  line-height: 2;
 }
