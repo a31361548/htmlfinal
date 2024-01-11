@@ -16,10 +16,8 @@ body {
 }
 
 #baricon {
-  width: 15%;
-  position: fixed;
-  right: 7%;
-  top: 2%;
+  height: 100%;
+  width: 200px;
 }
 #baricon i {
   font-size: 1.5rem;
@@ -35,4 +33,15 @@ body {
 }
 .ofbox li {
   line-height: 2;
+}
+
+@media (min-width: 390px) {
+  .navbar .container-fluid {
+    justify-content: space-between;
+  }
+}
+.box {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
 }
