@@ -22,6 +22,9 @@
 </head>
 
 <body>
+  <!-- 跟隨球球 -->
+  <div class="ball" id="myBox"></div>
+
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -67,7 +70,7 @@
     </div>
   </nav>
   <!-- offcanvas 內文 -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" style="z-index: 10000;">
     <div class="offcanvas-header">
       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
     </div>
@@ -85,29 +88,41 @@
     </div>
   </div>
 
-  <div id="home">
-    <div id="Ho_carousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-inner h-100">
-        <div class="carousel-item active h-100">
-          <img src="./image/slide-01.jpg" class="d-block">
-        </div>
-        <div class="carousel-item h-100">
-          <img src="./image/slide-02.jpg" class="d-block">
-        </div>
-        <div class="carousel-item h-100">
-          <img src="./image/slide-03.jpg" class="d-block">
-        </div>
+  <div id="home" class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides items-->
+      <div class="swiper-slide"><img src="./image/slide-01.jpg"></div>
+      <div class="swiper-slide"><img src="./image/slide-02.jpg"></div>
+      <div class="swiper-slide"><img src="./image/slide-03.jpg"></div>
+    </div>
+    <!-- 分頁 --->
+    <div class=" swiper-pagination"></div>
+
+    <!-- 上一頁、下一頁 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- 霧氣 -->
+    <div id="fog">
+      <div class="float-wrap-01">
+        <div class="cloud"></div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#Ho_carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#Ho_carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <div class="float-wrap-02">
+        <div class="cloud"></div>
+      </div>
+      <div class="float-wrap-03">
+        <div class="cloud"></div>
+      </div>
+      <div class="float-wrap-04">
+        <div class="cloud"></div>
+      </div>
+      <div class="float-wrap-05">
+        <div class="cloud"></div>
+      </div>
     </div>
   </div>
+
+
 
 
 
@@ -115,6 +130,7 @@
   <script src="./js/jquery-3.7.1.js"></script>
   <script src="./js/bootstrap.bundle.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js'></script>
+  <script src="./gsap/gsap.js"></script>
   <script src="./js/all.js"></script>
 </body>
 
