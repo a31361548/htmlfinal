@@ -1,0 +1,58 @@
+#footer{
+  margin-top: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title{
+    height: 12%;
+  }
+  .logo{
+    width: 80%;
+    height: 25%;
+    .swiper-slide{
+      width: 20%;
+    }
+  }
+  .information{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    .infobox{
+      width: 400px;
+      p{
+        &:hover{
+          color: orange;
+          cursor: pointer;
+        }
+        font-size: 14px;
+      }
+      h5{
+        &:hover{
+          color: orange;
+          cursor: pointer;
+        }
+        font-family: 'Oswald', sans-serif;
+        margin-bottom: 50px;
+      }
+      .input-group-text{
+        background-color: orange;
+        color: white;
+      }
+      .facebook{
+        i{
+          margin-left: 15px;
+        }
+        i:hover{
+          color: orange;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.copyright{
+color: white;
+margin-top: 50px;
+}

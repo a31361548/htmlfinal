@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- Google Fonts -->
-  <link <link
+  <link
     href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Share+Tech+Mono&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
   <!-- boostrap -->
   <link rel="stylesheet" href="./css/bootstrap.css">
@@ -17,6 +20,9 @@
   <!-- swiper -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css' />
 
+  <!-- lightbox -->
+  <link rel="stylesheet" href="./css/magnific-popup.css">
+  <link rel="stylesheet" href="./css/magnific-popup-self.css">
   <!-- self -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -87,38 +93,291 @@
       <div class="col-4 ofbox"></div>
     </div>
   </div>
+  <section id="section01">
+    <div id="home" class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides items-->
+        <div class="swiper-slide"><img src="./image/slide-01.jpg"></div>
+        <div class="swiper-slide"><img src="./image/slide-02.jpg"></div>
+        <div class="swiper-slide"><img src="./image/slide-03.jpg"></div>
+      </div>
+      <!-- 分頁 --->
+      <div class=" swiper-pagination"></div>
 
-  <div id="home" class="swiper">
-    <div class="swiper-wrapper">
-      <!-- Slides items-->
-      <div class="swiper-slide"><img src="./image/slide-01.jpg"></div>
-      <div class="swiper-slide"><img src="./image/slide-02.jpg"></div>
-      <div class="swiper-slide"><img src="./image/slide-03.jpg"></div>
+      <!-- 上一頁、下一頁 -->
+      <div class="swiper-button-prev"><i class="bi-caret-left-fill"></i></div>
+      <div class="swiper-button-next"><i class="bi-caret-right-fill"></i></div>
+
+      <!-- 霧氣 -->
+      <div id="fog">
+        <div class="float-wrap-01">
+          <div class="cloud"></div>
+        </div>
+        <div class="float-wrap-02">
+          <div class="cloud"></div>
+        </div>
+        <div class="float-wrap-03">
+          <div class="cloud"></div>
+        </div>
+        <div class="float-wrap-04">
+          <div class="cloud"></div>
+        </div>
+        <div class="float-wrap-05">
+          <div class="cloud"></div>
+        </div>
+      </div>
     </div>
-    <!-- 分頁 --->
-    <div class=" swiper-pagination"></div>
+  </section>
 
-    <!-- 上一頁、下一頁 -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+  <!-- section02 -->
+  <section id="section02">
+    <div class="row justify-content-around">
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-02.jpg" class="image-popup-no-margins">
+            <img src="./image/product-01.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-04.jpg" class="image-popup-no-margins">
+            <img src="./image/product-03.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-06.jpg" class="image-popup-no-margins">
+            <img src="./image/product-05.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-08.jpg" class="image-popup-no-margins">
+            <img src="./image/product-07.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-10.jpg" class="image-popup-no-margins">
+            <img src="./image/product-09.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-12.jpg" class="image-popup-no-margins">
+            <img src="./image/product-11.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-14.jpg" class="image-popup-no-margins">
+            <img src="./image/product-13.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-16.jpg" class="image-popup-no-margins">
+            <img src="./image/product-15.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 box">
+        <div class="poster">
+          <a href="./image/product-18.jpg" class="image-popup-no-margins">
+            <img src="./image/product-17.jpg" class="obj">
+          </a>
+        </div>
+        <div class="postext">
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-fill"></i>
+          <i class="bi-star-half"></i>
+          <div class="price">
+            <p>$54.79</p>
+            <p class="takeof">$45.39</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- 霧氣 -->
-    <div id="fog">
-      <div class="float-wrap-01">
-        <div class="cloud"></div>
+  <!-- footer -->
+  <div id="footer">
+    <div class="logo">
+      <div class="swiper logo-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./image/client1.png" class="obj"></div>
+          <div class="swiper-slide"><img src="./image/client2.png" class="obj"></div>
+          <div class="swiper-slide"><img src="./image/client3.png" class="obj"></div>
+          <div class="swiper-slide"><img src="./image/client4.png" class="obj"></div>
+          <div class="swiper-slide"><img src="./image/client5.png" class="obj"></div>
+          <div class="swiper-slide"><img src="./image/client6.png" class="obj"></div>
+          <div class="swiper-slide"><img src="./image/client7.png" class="obj"></div>
+        </div>
       </div>
-      <div class="float-wrap-02">
-        <div class="cloud"></div>
+    </div>
+    <div class="title">
+      <img src="./image/logo-02.png" class="obj">
+    </div>
+    <div class="information">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3 infobox">
+          <h5>STORE INFORMATION</h5>
+          <p> <i class="bi-geo-alt"></i>
+            1234 Park Street Avenue,NY City America.
+          </p>
+          <p>
+            <i class="bi-telephone-plus"></i>
+            +22 014 386 969143+88 014 419 67683
+          </p>
+          <p>
+            <i class="bi-envelope"></i>
+            info@example.com
+          </p>
+          <div>
+            <img src="./image/icon-pay-01.png">
+            <img src="./image/icon-pay-02.png">
+            <img src="./image/icon-pay-03.png">
+            <img src="./image/icon-pay-04.png">
+            <img src="./image/icon-pay-05.png">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 infobox">
+          <h5>USEFUL LINKS</h5>
+          <p>PlayStation Studios</p>
+          <p>PlayStation Games</p>
+          <p>Xbox Consoles</p>
+          <p>Xbox Games</p>
+          <p>Xbox Accessories</p>
+          <p>Cart</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 infobox">
+          <h5>OUR COMPANY</h5>
+          <p>Support</p>
+          <p>Privacy Policy</p>
+          <p>Sitemap</p>
+          <p>About Us</p>
+          <p>Legal</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 infobox">
+          <div class="row flex-column">
+            <div class="col">
+              <h5>NEWSLETTER</h5>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="email@example.com">
+                <span class="input-group-text"><i class="bi-send"></i></span>
+              </div>
+            </div>
+            <div class="col facebook">
+              <h5>GET SOCIAL</h5>
+              <i class="bi-facebook"></i>
+              <i class="bi-twitter"></i>
+              <i class="bi-pinterest"></i>
+              <i class="bi-instagram"></i>
+              <i class="bi-patreon"></i>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="float-wrap-03">
-        <div class="cloud"></div>
-      </div>
-      <div class="float-wrap-04">
-        <div class="cloud"></div>
-      </div>
-      <div class="float-wrap-05">
-        <div class="cloud"></div>
-      </div>
+    </div>
+    <div class="copyright">
+      <span>&copy; 11號 竭盡心力之鉅作</span>
     </div>
   </div>
 
@@ -129,8 +388,13 @@
 
   <script src="./js/jquery-3.7.1.js"></script>
   <script src="./js/bootstrap.bundle.js"></script>
+  <!-- swiper -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js'></script>
+  <!-- gsap -->
   <script src="./gsap/gsap.js"></script>
+  <!-- lightbox -->
+  <script src="./js/jquery.magnific-popup.js"></script>
+  <script src="./js/j1uery.magnific-self.js"></script>
   <script src="./js/all.js"></script>
 </body>
 

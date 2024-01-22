@@ -1,9 +1,9 @@
 
 // 小球跟隨
 function getRandomRGB() {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
   return `rgb(${r},${g},${b})`;
 }
 
@@ -18,7 +18,7 @@ function changeBorderColor() {
 
 
 
-gsap.set(".ball", {xPercent: -120, yPercent: -50});
+gsap.set(".ball", {xPercent: -150, yPercent: -80});
 
 let targets = gsap.utils.toArray(".ball"); 
 
@@ -32,11 +32,11 @@ window.addEventListener("mousemove", e => {
   });
 });
 
-setInterval(changeBorderColor, 1000);
+setInterval(changeBorderColor, 2000);
 
 
 // swiper
-const swiper = new Swiper("#home", {
+const swiper1 = new Swiper("#home", {
   loop: true,     // 無限循環
   speed: 1500,    //動畫持續時間
   autoplay: { delay: 3000 }, //自動播放，
@@ -85,22 +85,20 @@ float_tl
   )
 
   $('.cloud').each(function (index, cloud) {
-    // 也可以 set 用來設定樣式的初始值
+    // 設定樣式的初始值
     gsap.set(cloud, {
-      opacity: 0.6,
+      opacity: 0.3,
       position: 'absolute',
       x: function () {
         return index % 2 === 0 ? -$(window).width() : $(window).width()
       }
     })
-    // to 是做補間動畫
+    //補間動畫
     gsap.to(cloud, {
       x: function () {
         return index % 2 === 0 ? $(window).width() : -$(window).width()
       },
-      // 動畫重複撥放時執行的函式
       onRepeat() {
-        // 將霧的 top 設定為隨機值
         $(cloud).css({
           bottom:0
         })
@@ -110,3 +108,13 @@ float_tl
       ease: 'none'
     })
   })
+
+  /* footer swiper */
+  const swiper2 = new Swiper(".logo-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,  
+  speed: 1000, 
+  autoplay: { delay: 1000 },
+  });

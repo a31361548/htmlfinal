@@ -1,0 +1,9 @@
+#section01{
+  height: 350px;
+  // @include md{
+  //   height: 100vh;
+  // }
+  @include lg{
+    height: 100vh;
+  }
+}

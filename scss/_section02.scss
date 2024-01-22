@@ -1,0 +1,49 @@
+#section02{
+  display: flex;
+  justify-content: center;
+
+    .row{
+      width: 95%;
+      .box{
+        width: 500px;
+        margin-top: 50px;
+        height: 80vh;
+        border: 1px solid orange;
+        flex-direction: column;
+        justify-content: start;
+        .postext{
+          margin-top: 50px;
+          .price{
+            display: flex;
+            flex-direction: row;
+          }
+          p{
+            margin-right: 10px;
+            color: white;
+          }
+          .takeof{
+            text-decoration: line-through;
+          }
+          i{
+            color: orange;
+          }
+        }
+      }
+      @include lg{
+        .box{
+          width: 30%;
+        }
+      }
+      .poster{
+        margin-top: 10px;
+        width: 100%;
+        height: 70%;
+        border: 1px solid orange;
+        .obj{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+}

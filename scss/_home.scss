@@ -25,3 +25,25 @@
     height: 100%;
   }
 }
+
+.swiper-button-prev{
+  color:rgba(0, 0 ,0, 0.3);
+  font-size: 2.5rem;
+  &:hover{
+    color: orange;
+  }
+}
+.swiper-button-next{
+  color:rgba(0, 0, 0, 0.3);
+  font-size: 2.5rem;
+  &:hover{
+    color: orange;
+  }
+}
+
+.swiper-button-prev::after{
+  display: none;
+}
+.swiper-button-next::after{
+  display: none;
+}
