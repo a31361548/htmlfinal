@@ -18,7 +18,7 @@ function changeBorderColor() {
 
 
 
-gsap.set(".ball", {xPercent: -150, yPercent: -80});
+gsap.set(".ball", {xPercent: -120, yPercent: -50});
 
 let targets = gsap.utils.toArray(".ball"); 
 

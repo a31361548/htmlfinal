@@ -5,12 +5,9 @@ body {
   .ball {
     width: 20px;
     height: 20px;
-    top: 0;
-    left: 0;
     border: 2px solid,;
     border-radius: 50%;
     pointer-events: none;
-    z-index: 1000000000;
     }
     &::-webkit-scrollbar{
       background-color: gray;

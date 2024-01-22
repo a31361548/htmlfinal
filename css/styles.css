@@ -6,12 +6,9 @@ body {
 body .ball {
   width: 20px;
   height: 20px;
-  top: 0;
-  left: 0;
   border: 2px solid;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 1000000000;
 }
 body::-webkit-scrollbar {
   background-color: gray;
@@ -112,6 +109,8 @@ body .obj {
   height: 350px;
   top: 0;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 #home img {
   width: 100vw;
@@ -126,37 +125,28 @@ body .obj {
     position: absolute;
   }
 }
-
-.swiper {
+#home img {
   width: 100%;
   height: 100%;
 }
-.swiper img {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-button-prev {
+#home .swiper-button-prev {
   color: rgba(0, 0, 0, 0.3);
   font-size: 2.5rem;
 }
-.swiper-button-prev:hover {
+#home .swiper-button-prev:hover {
   color: orange;
 }
-
-.swiper-button-next {
+#home .swiper-button-next {
   color: rgba(0, 0, 0, 0.3);
   font-size: 2.5rem;
 }
-.swiper-button-next:hover {
+#home .swiper-button-next:hover {
   color: orange;
 }
-
-.swiper-button-prev::after {
+#home .swiper-button-prev::after {
   display: none;
 }
-
-.swiper-button-next::after {
+#home .swiper-button-next::after {
   display: none;
 }
 
